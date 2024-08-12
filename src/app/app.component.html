@@ -1,12 +1,4 @@
-<!-- 
-Welcome To {{title}}  <br><br> Hello {{user}} <br> <br>
 
-{{car1.description}} 
-
-
-<ul>
-  <li *ngFor="let car of cars">{{car.description}}</li>
-</ul> -->
 
 <div class = "container"> 
   <app-navi></app-navi>
@@ -15,8 +7,8 @@ Welcome To {{title}}  <br><br> Hello {{user}} <br> <br>
       <app-brand></app-brand>
     </div>
       <div class="col-md-9">
-      <app-rental></app-rental>
+        <router-outlet/>
      </div>
   </div>
-  <router-outlet />
+  
   </div>
